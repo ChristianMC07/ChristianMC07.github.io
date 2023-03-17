@@ -34,19 +34,19 @@
                     <li>
                         <div id="p-content">We need to install the SSL module for Apache. The command is the following: “sudo apt install apache2 ssl-cert”
                         </div>
-                        <img src="/images/blog/Picture3_1.png">
+                        <img src="./../../lib/images/blog/Picture3_1.png">
                     </li>
 
                     <li>
                         <div id="p-content">Then, we need to enable the SSL module for Apache. The command is: “sudo a2enmod ssl”.
                         </div>
-                        <img src="/images/blog/Picture3_2.png">
+                        <img src="./../../lib/images/blog/Picture3_2.png">
                     </li>
 
                     <li>
                         <div id="p-content">It tells us to restart apache2. We will do it.
                         </div>
-                        <img src="/images/blog/Picture3_3.png">
+                        <img src="./../../lib/images/blog/Picture3_3.png">
                     </li>
 
                     <li>
@@ -54,7 +54,7 @@
                             <br>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
                             <br>This will show up. The most important part is the Common Name part, where we need to specify the site's host                            
                         </div>
-                        <img src="/images/blog/Picture3_4.png">
+                        <img src="./../../lib/images/blog/Picture3_4.png">
                     </li>
 
                     <li>
@@ -62,7 +62,7 @@
                             <br>"sudo nano /etc/apache2/sites-available/your_domain_or_ip.conf"
                                                         
                         </div>
-                        <img src="/images/blog/Picture3_5.png">
+                        <img src="./../../lib/images/blog/Picture3_5.png">
                     </li>
 
                     <li>

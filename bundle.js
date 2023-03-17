@@ -1411,7 +1411,7 @@ exports.Logger = WebpackLogger;
 /*!*****************************************************************!*\
   !*** ./node_modules/webpack/lib/logging/createConsoleLogger.js ***!
   \*****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __nested_webpack_require_10785__) {
+/***/ (function(module, __unused_webpack_exports, __nested_webpack_require_11148__) {
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -1454,7 +1454,7 @@ function _arrayLikeToArray(arr, len) {
   return arr2;
 }
 
-var _require = __nested_webpack_require_10785__(/*! ./Logger */ "./node_modules/webpack/lib/logging/Logger.js"),
+var _require = __nested_webpack_require_11148__(/*! ./Logger */ "./node_modules/webpack/lib/logging/Logger.js"),
     LogType = _require.LogType;
 /** @typedef {import("../../declarations/WebpackOptions").FilterItemTypes} FilterItemTypes */
 
@@ -1729,7 +1729,7 @@ module.exports = function (_ref) {
 /*!*****************************************************!*\
   !*** ./node_modules/webpack/lib/logging/runtime.js ***!
   \*****************************************************/
-/***/ (function(__unused_webpack_module, exports, __nested_webpack_require_20872__) {
+/***/ (function(__unused_webpack_module, exports, __nested_webpack_require_21553__) {
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -1754,12 +1754,12 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 
-var SyncBailHook = __nested_webpack_require_20872__(/*! tapable/lib/SyncBailHook */ "./client-src/modules/logger/SyncBailHookFake.js");
+var SyncBailHook = __nested_webpack_require_21553__(/*! tapable/lib/SyncBailHook */ "./client-src/modules/logger/SyncBailHookFake.js");
 
-var _require = __nested_webpack_require_20872__(/*! ./Logger */ "./node_modules/webpack/lib/logging/Logger.js"),
+var _require = __nested_webpack_require_21553__(/*! ./Logger */ "./node_modules/webpack/lib/logging/Logger.js"),
     Logger = _require.Logger;
 
-var createConsoleLogger = __nested_webpack_require_20872__(/*! ./createConsoleLogger */ "./node_modules/webpack/lib/logging/createConsoleLogger.js");
+var createConsoleLogger = __nested_webpack_require_21553__(/*! ./createConsoleLogger */ "./node_modules/webpack/lib/logging/createConsoleLogger.js");
 /** @type {createConsoleLogger.LoggerOptions} */
 
 
@@ -1807,7 +1807,7 @@ exports.hooks = {
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __nested_webpack_require_23009__(moduleId) {
+/******/ 	function __nested_webpack_require_23768__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
@@ -1821,7 +1821,7 @@ exports.hooks = {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_23009__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_23768__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -1831,9 +1831,9 @@ exports.hooks = {
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__nested_webpack_require_23009__.d = function(exports, definition) {
+/******/ 		__nested_webpack_require_23768__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
-/******/ 				if(__nested_webpack_require_23009__.o(definition, key) && !__nested_webpack_require_23009__.o(exports, key)) {
+/******/ 				if(__nested_webpack_require_23768__.o(definition, key) && !__nested_webpack_require_23768__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
@@ -1842,13 +1842,13 @@ exports.hooks = {
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
-/******/ 		__nested_webpack_require_23009__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 		__nested_webpack_require_23768__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	!function() {
 /******/ 		// define __esModule on exports
-/******/ 		__nested_webpack_require_23009__.r = function(exports) {
+/******/ 		__nested_webpack_require_23768__.r = function(exports) {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
@@ -1863,11 +1863,11 @@ var __webpack_exports__ = {};
 /*!********************************************!*\
   !*** ./client-src/modules/logger/index.js ***!
   \********************************************/
-__nested_webpack_require_23009__.r(__webpack_exports__);
-/* harmony export */ __nested_webpack_require_23009__.d(__webpack_exports__, {
+__nested_webpack_require_23768__.r(__webpack_exports__);
+/* harmony export */ __nested_webpack_require_23768__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* reexport default export from named module */ webpack_lib_logging_runtime_js__WEBPACK_IMPORTED_MODULE_0__; }
 /* harmony export */ });
-/* harmony import */ var webpack_lib_logging_runtime_js__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_23009__(/*! webpack/lib/logging/runtime.js */ "./node_modules/webpack/lib/logging/runtime.js");
+/* harmony import */ var webpack_lib_logging_runtime_js__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_23768__(/*! webpack/lib/logging/runtime.js */ "./node_modules/webpack/lib/logging/runtime.js");
 
 }();
 var __webpack_export_target__ = exports;
@@ -2788,7 +2788,7 @@ module.exports.formatError = function (err) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("e44ad31a0822d0d94ff7")
+/******/ 		__webpack_require__.h = () => ("c7cf9bf24df2d44958ac")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
