@@ -4,7 +4,7 @@
     color: #FFFFFF;
     background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
-    url("/samples/food_festival/images/home/home_banner_opt.jpg");
+    url(../images/home/home_banner_opt.jpg);
     height: 91vh;
     width: 100%;
     background-size: cover;

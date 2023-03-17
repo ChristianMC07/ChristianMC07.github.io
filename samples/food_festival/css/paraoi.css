@@ -2,7 +2,7 @@
     grid-area: BannerChild;
 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
-    url(/samples/food_festival/images/paraoparai/p2Banner.jpg);
+    url(../images/paraoparai/p2Banner.jpg);
     color: #FFFFFF;
     height: 50vh;
     width: 100%;
