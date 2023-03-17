@@ -29,25 +29,25 @@
                 <ol>
                     <li>
                         <div id="p-content">Be sure you are in the home directory. You can use the “pwd” command to confirm this</div>
-                        <img src="./../../lib/images/blog/Picture1_6.png">
+                        <img src="./../lib/images/blog/Picture1_6.png">
                     </li>
 
                     <li>
                         <div id="p-content">From here, we need to change directory to the one that hosts our sites. So type “cd ../../var/www/”. The prompt should change to the following:
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_7.png">
+                        <img src="./../lib/images/blog/Picture1_7.png">
                     </li>
 
                     <li>
                         <div id="p-content">In this directory, we will need to create a sub directory. We will do it with the following command: “sudo mkdir + “directory_name””
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_8.png">
+                        <img src="./../lib/images/blog/Picture1_8.png">
                     </li>
                     
                     <li>
                         <div id="p-content">To check the sub directory has been created, we can type the following command: “ls”. The sub directory should be listed.
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_9.png">
+                        <img src="./../lib/images/blog/Picture1_9.png">
                     </li>
 
                     <li>
@@ -58,7 +58,7 @@
                     <li>
                         <div id="p-content">Inside this editor we type a sample text and “Write Out” with the “Ctrl + O” command. And then exit with the “Ctrl + X” command
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_10.png">
+                        <img src="./../lib/images/blog/Picture1_10.png">
                     </li>
 
                     <li>
@@ -69,7 +69,7 @@
                     <li>
                         <div id="p-content">Once there, we need to create a configuration file for our host. So first, we will look inside this directory to see all the files it contains. Just do a “ls” command.
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_11.png">
+                        <img src="./../lib/images/blog/Picture1_11.png">
                     </li>
 
                     <li>
@@ -80,7 +80,7 @@
                     <li>
                         <div id="p-content">After that, we will modify the content of this file with the information of our new site. The command is “sudo nano firstpage.info.conf”<br>This is the file that should appear:
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_12.png">
+                        <img src="./../lib/images/blog/Picture1_12.png">
                     </li>
 
                     <li>
@@ -91,13 +91,13 @@
                     <li>
                         <div id="p-content">The ServerName section is commented. So first we need to remove the “#” in front of it and after that change if with the name of our site.<br>It should look like this:                            
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_13.png">
+                        <img src="./../lib/images/blog/Picture1_13.png">
                     </li>
 
                     <li>
                         <div id="p-content">Then we need to change the “DocumentRoot” of our site. We just need to rename it with the location of it.<br>It should look like this:                            
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_14.png">
+                        <img src="./../lib/images/blog/Picture1_14.png">
                     </li>
 
                     <li>
@@ -108,7 +108,7 @@
                     <li>
                         <div id="p-content">The next step is to enable the configuration file we have just saved. The command is the following: “sudo a2ensite firstpage.info.conf”                       
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_15.png">
+                        <img src="./../lib/images/blog/Picture1_15.png">
                     </li>
 
                     <li>
@@ -119,13 +119,13 @@
                     <li>
                         <div id="p-content">After reloading, we check if it is running and available                     
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_16.png">
+                        <img src="./../lib/images/blog/Picture1_16.png">
                     </li>
 
                     <li>
                         <div id="p-content">We can check if our sites are available doing a “ls” command  in the following path “/etc/apache2/sites-enabled”                     
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_17.png">
+                        <img src="./../lib/images/blog/Picture1_17.png">
                     </li>
 
                     <li>
@@ -133,7 +133,7 @@
                             <br>We go to this path: “C:\Windows\System32\drivers\etc” and edit the “hosts” file with admin privileges.
                             <br>This is the file that should prompt.                                               
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_18.png">
+                        <img src="./../lib/images/blog/Picture1_18.png">
                     </li>
 
                     
@@ -141,20 +141,20 @@
                         <div id="p-content">We make a new entry to this file and save the file: 
                             <br>It should be like this:                                                                          
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_19.png">
+                        <img src="./../lib/images/blog/Picture1_19.png">
                     </li>
                     
                     <li>
                         <div id="p-content">Now it is time to look at our site. We type in the browser the domain. In this case: “firstpage.info”.
                             <br>If all the steps were made correctly, this is what should appear
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_20.png">
+                        <img src="./../lib/images/blog/Picture1_20.png">
                     </li>
                     
                     <li>
                         <div id="p-content">The process for “secondpage.info” is exactly the same, this “secondpage.info” information. The working page is the following:
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_21.png">
+                        <img src="./../lib/images/blog/Picture1_21.png">
                     </li>
 
                     <li>
@@ -165,14 +165,14 @@
                     <li>
                         <div id="p-content">Once inside the file, we need to locate this section:
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_22.png">
+                        <img src="./../lib/images/blog/Picture1_22.png">
                     </li>
 
                     <li>
                         <div id="p-content">In this section, we need to remove "Indexes" from "&ltDirectrory /var/www/&gt"
                             <br>It should look like this:                            
                         </div>
-                        <img src="./../../lib/images/blog/Picture1_23.png">
+                        <img src="./../lib/images/blog/Picture1_23.png">
                     </li>
 
                     <li>
