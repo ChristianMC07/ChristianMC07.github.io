@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joan&family=Kdam+Thmor+Pro&family=League+Gothic&family=Raleway&family=Roboto+Slab&family=Shadows+Into+Light&display=swap');
+
+.banner{
+    color: #FFFFFF;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+    url("/samples/food_festival/images/home/home_banner_opt.jpg");
+    height: 91vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.banner a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color:#dcaf3b;
+    padding: 10px 30px;
+    margin-top: 40px;
+    border-radius: 50px
+}
+
+.banner a:hover{
+    background-color: black;
+    color: #dcaf3b;
+}
+
+
+.sub_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.when{
+    padding: 50px;
+    border: solid;
+    margin: 40px;
+    text-align: center;
+    width: 400px;
+
+}
+
+.where{
+    padding: 50px;
+    border: solid;
+    margin: 40px;
+    text-align: center;
+    width: 400px;
+
+}
+
+.map{
+    display: flex;
+}
+
+iframe{
+    flex-grow: 1;
+    padding: 20px 0px 20px 0px;
+}
+
+main{
+    font-family: Bebas Neue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "costs hours";
+    padding-bottom: 20px;
+
+
+}
+
+.costs{
+    grid-area: costs;
+    padding: 5%;
+    background-color:#dcaf3b ;   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hours{
+    grid-area: hours;
+    padding: 5%;
+    background-color: black;
+    color: #dcaf3b;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 780px) {
+    
+    .banner{
+        height: 70vh;
+    }
+
+    
+    main{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "costs" "hours";
+    }
+
+    
+}

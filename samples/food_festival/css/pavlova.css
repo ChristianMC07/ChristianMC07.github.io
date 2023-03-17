@@ -1,0 +1,170 @@
+.BannerChild {
+    grid-area: BannerChild;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+        url(/samples/food_festival/images/pavlova/p3Banner.jpg);
+    color: #FFFFFF;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    background-color: #dcdfe8;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    line-height: 2rem;
+    padding-bottom: 50px;
+}
+
+.mainflex {
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.3rem;
+}
+
+
+.ingre {
+    padding-left: 30px;
+    padding-right: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+}
+
+.ulist {
+    display: flex;
+    flex-direction: column;
+}
+
+.uItem {
+    display: flex;
+    flex-direction: row;
+
+    padding: 5px;
+}
+
+.firstCol {
+    width: 200px;
+}
+
+
+
+.instruct {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainflex span {
+    font-weight: bold;
+}
+
+.mainflex a {
+    text-decoration: none;
+    color: blue;
+}
+
+.mainflex a:hover {
+    color: red;
+}
+
+
+/* IMG */
+#pavlova00 {
+
+    width: 500px;
+    height: 500px;
+    padding-top: 30px;
+    margin-right: 150px;
+
+    border-radius: 20%;
+}
+
+#pavlova01 {
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+
+    margin-left: 100px;
+}
+
+
+
+
+
+/* MEDIA QUERRY */
+@media screen and (max-width: 1000px) {
+    .ingre {
+        padding: 0;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .instruct {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #pavlova01 {
+        margin-left: 0;
+    }
+
+    #pavlova00 {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .mainflex {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    #pavlova00 {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainflex {
+        padding: 20px;
+    }
+
+    /* IMG */
+    #pavlova00 {
+
+        width: 300px;
+        height: 300px;
+        padding-top: 30px;
+        border-radius: 20%;
+    }
+
+    #pavlova01 {
+        width: 300px;
+        height: 300px;
+        border-radius: 10%;
+    }
+}
+

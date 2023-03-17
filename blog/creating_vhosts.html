@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/14c5594ce5.js" crossorigin="anonymous"></script>
+        <title>Blog | Creating VHosts in Linux</title>
+        <link rel="stylesheet" href="../bundle.css">
+            
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="nav-link" href="/index.html">Home</a>
+                <a class="nav-link" href="/resume.html">Resume</a>
+                <a class="nav-link" href="/web-samples.html">Web App Samples</a>
+                <a class="nav-link" href="/others.html">Other Samples</a>
+                <a class="nav-link-featured" href="/blog.html">Blog</a>
+            </nav>
+            <div id="Banner_Blog">
+                <h1>Creating VHosts in Linux
+                </h1>
+            </div>
+        </header>
+  
+        <main>
+            <div class="g-blog">
+                <ol>
+                    <li>
+                        <div id="p-content">Be sure you are in the home directory. You can use the “pwd” command to confirm this</div>
+                        <img src="/images/blog/Picture1_6.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">From here, we need to change directory to the one that hosts our sites. So type “cd ../../var/www/”. The prompt should change to the following:
+                        </div>
+                        <img src="/images/blog/Picture1_7.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">In this directory, we will need to create a sub directory. We will do it with the following command: “sudo mkdir + “directory_name””
+                        </div>
+                        <img src="/images/blog/Picture1_8.png">
+                    </li>
+                    
+                    <li>
+                        <div id="p-content">To check the sub directory has been created, we can type the following command: “ls”. The sub directory should be listed.
+                        </div>
+                        <img src="/images/blog/Picture1_9.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">It is time to create an html file inside our directory. We do “sudo nano firstpage.info/index.html”. This will pop up a file editor.
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="p-content">Inside this editor we type a sample text and “Write Out” with the “Ctrl + O” command. And then exit with the “Ctrl + X” command
+                        </div>
+                        <img src="/images/blog/Picture1_10.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">To make our site available, we need to configure its availability. So, we will change directory to “cd /etc/apache2/sites-available”
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="p-content">Once there, we need to create a configuration file for our host. So first, we will look inside this directory to see all the files it contains. Just do a “ls” command.
+                        </div>
+                        <img src="/images/blog/Picture1_11.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">We will copy the 000-default.conf and rename it with our site's name. We will do “sudo cp 000-default.conf firstpage.info.conf”
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="p-content">After that, we will modify the content of this file with the information of our new site. The command is “sudo nano firstpage.info.conf”<br>This is the file that should appear:
+                        </div>
+                        <img src="/images/blog/Picture1_12.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">In this file we need to edit the “ServerName” section and the “DocumentRoot” section.
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="p-content">The ServerName section is commented. So first we need to remove the “#” in front of it and after that change if with the name of our site.<br>It should look like this:                            
+                        </div>
+                        <img src="/images/blog/Picture1_13.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">Then we need to change the “DocumentRoot” of our site. We just need to rename it with the location of it.<br>It should look like this:                            
+                        </div>
+                        <img src="/images/blog/Picture1_14.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">After that, we need to save the file.
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="p-content">The next step is to enable the configuration file we have just saved. The command is the following: “sudo a2ensite firstpage.info.conf”                       
+                        </div>
+                        <img src="/images/blog/Picture1_15.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">It tells us to reload apache2. We do it. We can instead do “sudo” with previous command to do it more quickly.
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="p-content">After reloading, we check if it is running and available                     
+                        </div>
+                        <img src="/images/blog/Picture1_16.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">We can check if our sites are available doing a “ls” command  in the following path “/etc/apache2/sites-enabled”                     
+                        </div>
+                        <img src="/images/blog/Picture1_17.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">Finally, we have to configure the “hosts” file from our Windows and add this page in it.
+                            <br>We go to this path: “C:\Windows\System32\drivers\etc” and edit the “hosts” file with admin privileges.
+                            <br>This is the file that should prompt.                                               
+                        </div>
+                        <img src="/images/blog/Picture1_18.png">
+                    </li>
+
+                    
+                    <li>
+                        <div id="p-content">We make a new entry to this file and save the file: 
+                            <br>It should be like this:                                                                          
+                        </div>
+                        <img src="/images/blog/Picture1_19.png">
+                    </li>
+                    
+                    <li>
+                        <div id="p-content">Now it is time to look at our site. We type in the browser the domain. In this case: “firstpage.info”.
+                            <br>If all the steps were made correctly, this is what should appear
+                        </div>
+                        <img src="/images/blog/Picture1_20.png">
+                    </li>
+                    
+                    <li>
+                        <div id="p-content">The process for “secondpage.info” is exactly the same, this “secondpage.info” information. The working page is the following:
+                        </div>
+                        <img src="/images/blog/Picture1_21.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">To disable directory listing for our sites we need to do this command: “sudo nano /etc/apache2/apache2.conf”
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="p-content">Once inside the file, we need to locate this section:
+                        </div>
+                        <img src="/images/blog/Picture1_22.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">In this section, we need to remove "Indexes" from "&ltDirectrory /var/www/&gt"
+                            <br>It should look like this:                            
+                        </div>
+                        <img src="/images/blog/Picture1_23.png">
+                    </li>
+
+                    <li>
+                        <div id="p-content">Then we save and exit the file                           
+                        </div>
+                    </li>
+
+                    <li>
+                        <div id="p-content">To changes take effect, we need to restart apache with this command “sudo systemctl restart apache2”                         
+                        </div>
+                    </li>
+
+
+
+                </ol>
+            </div>
+
+
+        </main> 
+
+        <footer>
+            <div class="contact">
+                <h3>Contact Me</h3>
+                <a href="tel:7823701438">782-370-1438</a> <br><br>
+                <a href="mailto:w0472255@nscc.ca">w0472255@nscc.ca</a>
+            </div>
+            <div class="social">
+                <h3>My Social Media</h3>
+                <a href="https://www.linkedin.com/in/christian-m-94778583/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#ffffff" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+            </div>
+        </footer>
+        <script src="./bundle.js"></script> 
+    </body>
+</html>

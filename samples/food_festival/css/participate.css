@@ -1,0 +1,44 @@
+.BannerChild{
+    background-image:
+linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+url("/samples/food_festival/images/participate/get_Involved_banner.png");
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin-top:5%;
+    background-color: lightgray;
+    justify-content: flex-start;
+
+}
+
+.initial{
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.initial a{
+    /* text-transform: uppercase; */
+    text-decoration: underline;
+    color: #dcaf3b;
+    /* background-color:#dcaf3b; */
+    /* padding: 10px 30px;
+    margin-top: 40px;
+    border-radius: 50px */
+}
+
+.initial a:hover{
+    /* background-color: black; */
+    color: black;
+}

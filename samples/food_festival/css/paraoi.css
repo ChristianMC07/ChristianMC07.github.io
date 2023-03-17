@@ -1,0 +1,217 @@
+.BannerChild {
+    grid-area: BannerChild;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+    url(/samples/food_festival/images/paraoparai/p2Banner.jpg);
+    color: #FFFFFF;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "intro         intro"
+    "paraoImg      mainflex";
+    align-items: center;
+    justify-items: start;
+}
+
+#paraoLong {
+    grid-area: paraoImg;
+
+    width: 600px;
+    height: 1200px;
+
+    padding-left: 15%;
+    padding-top: 40px;
+}
+
+.mainflex {
+    grid-area: mainflex;
+
+    /* padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 150px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.mainflex p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+/* INTRO (flexbox) */
+.intro {
+    grid-area: intro;
+    background-color: #dcdfe8;
+    padding: 30px;
+
+    
+}
+
+
+/* INGREDIENTS */
+.ingContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+}
+
+.ulist {
+    display: flex;
+    flex-direction: column;
+}
+
+.uItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstCol {
+    width: 120px;
+    margin-right: 10%;
+}
+
+.secondCol{
+    width: 170px;
+}
+
+
+/* INSTRUCTIONS */
+.baking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.baking ol {
+    padding-left: 100px;
+
+}
+
+.drying {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.repNote a {
+    color: blue;
+    text-decoration: none;
+}
+
+.repNote a:hover {
+    color: red;
+}
+
+
+
+/* *** IMAGES *** */
+#bakingpowder {
+    width: 250px;
+    height: 180px;
+    border-radius: 20%;
+
+    margin: 10%;
+}
+
+#parabaking {
+    width: 280px;
+    height: 180px;
+
+    border-radius: 20%;
+} 
+
+
+#paradrying {
+    width: 250px;
+    height: 200px;
+    border-radius: 20%;
+
+    margin-left: 80px;
+}
+
+.repNote {
+    padding-top: 20px;
+}
+
+
+
+
+
+/* MEDIA QUERRY */
+@media screen and (max-width: 1650px) {
+    #paraoLong {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .ingContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .baking {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .baking ol {
+        padding-left: 35px;
+    }
+
+    .drying {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bakingpowder {
+        margin-left: 0;
+    }
+
+    #paradrying {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .mainflex {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        font-size: 1rem;
+    }
+
+    .ingContainer table tr td:nth-child(2) 
+    /* select the 2nd column */
+    {
+        padding-left: 50px;
+    }
+}

@@ -1,0 +1,94 @@
+body{
+    padding: 15px;
+    background-color:  #035074;
+    color: white;
+    font-family: "Arvo", sans-serif;
+    font-size: 1.3rem;
+}
+
+
+.heading {
+    font-size:3rem;
+    font-weight:bold;
+
+    opacity:0.5;
+    padding-bottom:3px;
+  }
+
+.sub-heading {
+    font-weight:bold;
+    letter-spacing:5.5px;
+    padding-bottom:3px;
+    opacity:0.5;
+
+}
+
+
+
+h2{
+    font-weight: bold;
+}
+
+ul{
+    padding: 0px 0px 20px 80px;
+    font-size: 1.5rem;
+
+}
+
+li{
+    padding: 10px 0px 10px 0px;
+}
+
+.not-selected{
+    opacity: 0.5;
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.start{
+    padding-top: 30px;
+    font-weight: normal;
+}
+
+.fa-circle-check{
+    color: green;
+    padding-right: 10px;
+}
+
+.fa-circle-xmark{
+    color: red;
+    padding-right: 10px;
+}
+.icon-text{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 20px 0 20px 40px;
+}
+
+#one_button{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color:#026dbf;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    width: 220px;
+    display: flex;
+    align-self: center;
+}
+
+#one_button:hover{
+    background-color: #131c5f;
+    transition: background-color 0.2s;
+}
+
