@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WeatherApp</title>
+		<link rel="stylesheet" href="./bundle.css">
+    </head>
+    <body class="g-base">
+        <div class="g-loading-overlay"></div>
+        <div>
+            <header>
+                <div class="g-title">Weather Reporter</div>
+                <div class="g-sub-title">Select a Canadian city to see the current weather report</div>
+            </header>
+
+            <main>
+                <nav class="nav">
+                    <select>
+                    </select>
+                </nav>
+                
+                <div class="g-content">
+                    <div id="p-weather">
+                        <div class="icon"></div>
+                        <div class="description"></div>
+                        <div id="city"></div>
+                    </div>
+
+                    <div id="sub-content">
+                        
+                        <div id="p-temperature">
+                            <div class="container">
+                                <div class="icon"></div>
+                                <div class="description"></div>
+                            </div>  
+                            <div id="current"></div>
+                            <div id="min"></div>
+                            <div id="max"></div>
+                            <div id="feels"></div>
+                        </div>
+
+                        <div id="p-visibility">
+                            <div class="container">
+                                <div class="icon"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div id="km"></div>                        
+                        </div>
+
+                        <div id="p-humidity">
+                            <div class="container">
+                                <div class="icon"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div id="percentage"></div>
+                        </div>
+
+                        <div id="p-pressure">
+                            <div class="container">
+                                <div class="icon"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div id="hPa"></div>
+                        </div>
+
+                        <div id="p-wind">
+                            <div class="container">
+                                <div class="icon"></div>
+                                <div class="description"></div>
+                            </div>
+                            <div id="deg"></div>
+                            <div id="speed"></div>
+                        </div>
+                    </div>              
+                    <div id="overlay"></div>
+                </div>
+            </main>
+
+            <footer>
+                <a href="https://openweathermap.org/">Powered by OpenWeatherMap</a>
+                <a href="http://erikflowers.github.io/weather-icons/"> | Weather Icons </a>
+            </footer>
+
+
+        </div>
+
+
+
+        <script src="./bundle.js"></script>                
+    </body>
+</html>
