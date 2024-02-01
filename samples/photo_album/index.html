@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Photo Album</title>
+		<link rel="stylesheet" href="./bundle.css">
+    </head>
+    <body class="g-body">
+
+        <div class="g-loading-overlay"></div>
+
+        
+
+        <div class ="g-errorLoaded" style="display:none">
+            <h1 class="g-title">My Photo Album</h1>
+            <div id="p-error_message">Oops!</div>
+            <div id="p-explanation">
+                <div>We couldn't find the content you requested. </div>
+                <img src="./images/error_404.png">
+                <div>Try again later, please.</div>
+            </div>
+
+        
+        </div>
+        
+        <div class="g-contentLoaded" style="display:none">
+            <h1 class="g-title">My Photo Album</h1>
+        
+            <div class="g-photo">
+                <div>
+                    <div id="p-photo_title"></div>
+                    <div id="p-photo_number"></div>
+                </div>
+                <img src=""id="p-image">
+                <div id="p-photo_caption"></div>
+            </div>
+            
+            <div class="g-buttons">
+                <a class="navigation"id="p-previousBtn">&#8249;</a>
+                <a class="navigation" id="p-nextBtn">&#8250;</a>
+                <a class="navigation" id="p-jumpBtn">Jump</a>
+                <a class="navigation" id="p-commentBtn">Comment</a>            
+            </div>
+            
+            <div class="g-thumbnails" style="display: none"></div>
+            
+            
+            
+            <div class="g-createComment" style="display: none">
+                <div>
+                    <label>Author</label>
+                    <input class="textbox" id="p-author" type="text" maxlength="30"/>
+                </div>
+                
+                <div>
+                    <label>Comment</label>
+                    <textarea class="textbox" id="p-newComment" rows="14" wrap="soft" maxlength="200"></textarea>
+                    <label id="p-textCounter">0 of 200</label>
+                </div>
+
+                <div class="g-submit">Submit</div>
+            </div>
+
+            <div class="g-allComments"></div>
+        </div>
+
+
+
+        <script src="./bundle.js"></script>                
+    </body>
+</html>
