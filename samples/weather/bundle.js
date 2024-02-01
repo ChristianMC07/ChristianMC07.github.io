@@ -3440,7 +3440,7 @@
     
     
     
-    const LOCAL_SOURCE = "http://localhost:3000/cities.json";
+    const LOCAL_SOURCE = "/cities.json";
     
     
     // ---------------------  local variables for HTML DOM
