@@ -1,0 +1,229 @@
+/*!***************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./sass/styles.scss ***!
+  \***************************************************************************************************************************************/
+@font-face {
+  font-family: "Lobster";
+  src: url(/fonts/Lobster-Regular.ttf);
+}
+.g-body {
+  padding: 3%;
+  background-image: url("https://img.freepik.com/free-photo/paper-texture_1154-611.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: #ebebeb;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.g-body .g-loading-overlay {
+  position: fixed;
+  z-index: 999;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: show;
+  margin: auto;
+  padding: 2%;
+  display: block;
+}
+.g-body .g-errorLoaded #p-error_message {
+  font-size: 5em;
+  color: #285d3e;
+  font-weight: bolder;
+}
+.g-body .g-errorLoaded #p-explanation {
+  font-size: 2em;
+  padding-top: 20px;
+  color: #011627;
+}
+.g-body .g-errorLoaded #p-explanation img {
+  width: 40%;
+}
+.g-body .g-title {
+  font-family: "Lobster";
+  font-size: 3em;
+  color: #285d3e;
+  margin: 0px 0px 20px;
+}
+.g-body .g-photo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.g-body .g-photo #p-photo_title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.g-body .g-photo #p-photo_number {
+  font-size: 1.1em;
+}
+.g-body .g-photo > div:first-child {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.g-body .g-photo img {
+  width: 40vw;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  border-radius: 3%;
+}
+.g-body .g-thumbnails {
+  display: flex;
+  max-width: 40vw;
+  flex-wrap: wrap;
+  padding-top: 1.3em;
+  justify-content: left;
+}
+.g-body .g-thumbnails img {
+  width: 5em;
+  padding: 0 1% 1% 0;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.g-body .g-thumbnails img:hover {
+  filter: grayscale(0) !important;
+  cursor: pointer;
+}
+.g-body .g-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.3em;
+  padding-top: 20px;
+  max-width: 300px;
+}
+.g-body .g-buttons a {
+  text-decoration: none;
+}
+.g-body .g-buttons .navigation {
+  margin-right: 2%;
+  margin-bottom: 2%;
+  color: white;
+  padding: 7px 9px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.g-body .g-buttons #p-previousBtn {
+  background-color: #011627;
+  color: white;
+}
+.g-body .g-buttons #p-nextBtn {
+  background-color: #011627;
+}
+.g-body .g-buttons #p-jumpBtn {
+  background-color: #a6a128;
+}
+.g-body .g-buttons #p-commentBtn {
+  background-color: #285d3e;
+}
+.g-body .g-createComment {
+  padding-top: 20px;
+}
+.g-body .g-createComment div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.g-body .g-createComment div #p-author {
+  border-color: #cccccc;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  color: #555;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+.g-body .g-createComment div #p-newComment {
+  border-color: #cccccc;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  color: #555;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+.g-body .g-createComment div #p-textCounter {
+  align-self: flex-end;
+}
+.g-body .g-createComment .g-submit {
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10%;
+  pointer-events: none;
+  background-color: gray;
+  max-width: 50px;
+}
+.g-body .g-allComments {
+  padding-top: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+.g-body .g-allComments > div {
+  display: inline-flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 5px 15px 10px 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: solid;
+  border-color: #a6a128;
+}
+.g-body .g-allComments > div > div {
+  display: inline-flex;
+  flex-direction: column;
+}
+.g-body .g-allComments > div > div:nth-child(1) {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #285d3e;
+}
+.g-body .g-allComments > div > div:nth-child(2) {
+  font-size: 1.1em;
+}
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/spin.js/spin.css ***!
+  \*************************************************************************************************************/
+@keyframes spinner-line-fade-more {
+  0%, 100% {
+    opacity: 0; /* minimum opacity */
+  }
+  1% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-line-fade-quick {
+  0%, 39%, 100% {
+    opacity: 0.25; /* minimum opacity */
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-line-fade-default {
+  0%, 100% {
+    opacity: 0.22; /* minimum opacity */
+  }
+  1% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-line-shrink {
+  0%, 25%, 100% {
+    /* minimum scale and opacity */
+    transform: scale(0.5);
+    opacity: 0.25;
+  }
+  26% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
