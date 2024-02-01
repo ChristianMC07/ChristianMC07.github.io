@@ -3634,7 +3634,7 @@
     // I need to pass the city and that will affect the URL (the value that determines the information displayed is only the city name 
     async function openWeatherAPI(city) {
       // the only comment here is that the requriments indicate to show the data in metric units. It is a way to do it directly from the API
-      const API_URL = `http://api.openweathermap.org/data/2.5/weather?q=${city},CA&appid=f90d0af2a957abf4f96f6d89eea59dab&units=metric`;
+      const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city},CA&appid=f90d0af2a957abf4f96f6d89eea59dab&units=metric`;
       try {
         const response = await fetch(API_URL);
         const data = await response.json();
